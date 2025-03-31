@@ -1,0 +1,157 @@
+
+.menu a, li{
+    display:inline-block;
+    width: 150px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Estilo de la parte superior de la página*/
+.menu {
+    background-color: #009933;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.footer {
+    background-color: #009933;
+    color: white;
+    text-align: left;
+    padding: 0px 10px;
+    font-size: 14px;
+    height: 400px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-content{
+  display: flex;
+}
+.footer h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+.footer-content .logotipo{
+  margin-right: 20px;
+  width: 200px;
+
+}
+.footer table td, .footer-content p{
+    padding: 15px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    flex-grow: 1;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+    position:relative;
+    background-image: url('main_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+} 
+
+.content {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: justify;
+  background-color: #f0f0f0;
+  height: 900px;
+  color: black;
+  z-index: 2; /* Ensure the content is above the overlay */
+}
+ 
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #009933;
+    text-align: left;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location img {
+  margin-right: 10px; /* Ajusta el espacio entre el icono y el texto */
+}
+
+.images{
+  display: flex;
+}
+
+.photo_MP {
+  padding: 20px;
+}
+
+.subheading_SN{
+  text-align: center;
+}
+
+#sobre-nosotros{
+    background-color:white;
+    color: black;
+    padding: 10px;
+    background-color: #d1f5dc;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: justify;
+    height: 900px;
+}
+
+#sobre_ellos{
+    width: 800px;
+    border-radius: 20px;
+}
+#logo{
+  border-radius: 100%;
+}
+.my_school{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.icons{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.footer-content .social_media{
+  text-align: left;
+  padding: 10px 210px;
+}

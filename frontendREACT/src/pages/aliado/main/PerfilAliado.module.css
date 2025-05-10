@@ -1,0 +1,301 @@
+.perfilContainer {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
+
+.perfilContainer h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.perfilContainer h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.infoItem {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.infoItem label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: green;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.infoItem p {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.direccionContainer, .descripcionContainer {
+  grid-column: 1 / -1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.direccionContainer label, .descripcionContainer label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: green;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.direccionDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.direccionDetails p {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.descripcionContainer p {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.error {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #d9534f;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.editButton {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #FF6B00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Montserrat', sans-serif;
+  min-width: 180px;
+}
+
+.editButton:hover {
+  background-color: #E65100;
+}
+
+/* Modal and Edit Form Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.modalContent {
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modalContent h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.editSection {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.editSection h3 {
+  color: #555;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formGroup {
+  flex: 1;
+  min-width: 250px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: green;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formGroup input, .formGroup textarea, .formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.sectionSubtitle {
+  font-weight: 600;
+  color: green;
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.updateButton, .cancelButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+  min-width: 180px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.updateButton {
+  background-color: #FF6B00;
+  color: white;
+}
+
+.updateButton:hover {
+  background-color: #E65100;
+}
+
+.updateButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cancelButton {
+  background-color: #FF6B00;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #E65100;
+}
+
+/* Message styles */
+.messageBox {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formGroup {
+    min-width: 100%;
+  }
+  
+  .modalContent {
+    width: 95%;
+    padding: 15px;
+  }
+} 
